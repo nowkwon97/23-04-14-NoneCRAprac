@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LoginPage from './login.js';
+import StartPage from './startScreen';
+import { createRoot } from 'react-dom/client'
+
 
 const App = () => {
-  return <LoginPage>Hello World!!!</LoginPage>;
+  return <StartPage />;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+createRoot(document.getElementById('root')).render(<App />);
