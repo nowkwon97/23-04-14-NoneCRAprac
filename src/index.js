@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import LoginPage from './login.js';
 
 const App = () => {
-  return <div>Hello World!</div>;
+  return <LoginPage>Hello World!!!</LoginPage>;
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
